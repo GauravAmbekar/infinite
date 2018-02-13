@@ -1,0 +1,33 @@
+*{
+	margin:0;
+}
+
+body{
+	background:white;
+	/*margin:0;*/
+	font-family:arial,times;
+}
+.heading{
+	background:black;
+	color:white;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:20px;
+	text-transform:capitalize;
+
+}
+.products{
+	/*background:gray;*/
+}
+.products h2{
+	text-align:center;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.products_box{
+	border:1px solid;
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}

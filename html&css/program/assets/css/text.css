@@ -1,0 +1,11 @@
+*{
+	color: red, initial, inherit;
+	direction: ltr, rtl, initial, inherit;
+	letter-spacing: normal, 10px, initial, inherit;
+	line-height: normal, 1, 10px, 20%, initial, inherit;
+	text-align: left, right, center, justify, initial;
+	text-decoration: none, underline, overline, line-through, initial, inherit;
+	text-indent: 10px, 20%, initial, inherit;
+	text-shadow: h-shadow, v-shadow, blur-radius, color, none, initial, inherit;
+	text-transform: none,capitalize, uppercase, lowercase, initial, inherit;
+}
