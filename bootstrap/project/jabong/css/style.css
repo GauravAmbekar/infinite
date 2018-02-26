@@ -1,0 +1,50 @@
+
+.header{
+	padding-top: 5px;
+	text-transform: capitalize;
+	font-size: 12px;
+}
+.header a{
+	text-decoration: none;
+	color: gray;
+}
+.header ul{
+	list-style: none;
+	padding-top: 10px;
+}
+.header ul li{
+	display: inline-block;
+	margin-left: 2px;
+}
+.header ul li a:hover{
+	color: black;
+}
+.toggle-button{
+	border: 1px solid red;
+	float: left;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.navbar-brand{
+	padding-left: 0;
+}
+.no-right-padding{
+	/*border: 1px solid;*/
+	padding-right: 0;
+}
+.no-left-padding{
+	/*border: 1px solid;*/
+	padding-left: 0;
+}
+.navbar{
+	border-left: none;
+	border-right: none;
+	border-radius: none;
+}

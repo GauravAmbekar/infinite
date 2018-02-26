@@ -1,0 +1,210 @@
+*{
+	box-sizing: border-box;
+}
+.body{
+	margin: 0;
+	padding: 0;
+}
+#navbar{
+	border: 1px solid lightgray;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	background-color: #fff;
+}
+.container-fluid{
+	/*border: 1px solid;*/
+	width: 100%;
+	padding-bottom: 10px;
+	left: 0;
+	right: 0;
+}
+.header{
+	/*border: 1px solid;*/
+	color: #526cd0;
+	max-width: 80%;
+	margin: auto;
+	overflow: auto;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	text-transform: capitalize;
+	font-size: 11px;
+}
+.header div{
+	/*border: 1px solid;*/	
+	min-width: 110px;
+	font-family: arial;
+	float: right;
+	display: inline-block;
+}
+.header span{
+	border: 1px solid #f16565;
+	color: #f16565;
+	border-radius: 90px;
+	margin-left: 5px;
+	padding: 3px;
+}
+.menu{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: 10px auto;
+
+}
+.menu > div{
+	/*border: 1px solid;*/
+	display: inline-block;
+	margin-left: 50px;
+	text-transform: capitalize;
+}
+.menu-right{
+	float: right;
+}
+.menu input{
+	margin-left: 80px;
+	height: 30px;
+	width: 100%;
+}
+.menu a{
+	color: darkgray;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+.menu a:hover{
+	border-bottom: 2px solid #ee5f73;
+}
+.offer{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+}
+.offer > div{
+	/*border: 1px solid;*/
+	float: left; 
+	margin: 10px;
+}
+.slider{
+	border: 1px solid;
+}
+.mySlides {display: none}
+.numbertext{
+	border: 1px solid;
+}
+.text{
+	border: 1px solid;
+}
+.next{
+	border: 1px solid;
+}
+.prev{
+	border: 1px solid;	
+}
+.dot{
+	border: 1px solid;
+}
+.wallet{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.offer-code{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+	margin-bottom: 30px;	
+}
+.offer-code img{
+	width: 100%;
+}
+.handpick{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+	margin-bottom: 30px;
+	overflow: auto;	
+	padding-bottom: 50px;
+}
+.handpick-img{
+	/*border: 1px solid red;*/
+	float: left;
+	margin-right: 28px;
+	margin-bottom: 10px;
+}
+.handpick img{
+	width: 100%;
+}
+.popular{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+	overflow: auto;
+}
+.popular-img{
+	/*border: 1px solid;*/
+	float: left;
+}
+.popular img{
+	width: 100%;
+}
+.popular-text{
+	/*border: 1px solid;*/
+	margin-right: 20px;
+	padding-right: 120px;
+}
+.popular-text ol{
+	list-style: none;
+	padding-left: 0;
+}
+.popular-text li{
+	padding-bottom: 30px;
+	margin-left: 0;
+}
+.footer{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	overflow: auto;
+}
+.footer div{
+	/*border: 1px solid;*/
+	float: left;
+}
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+.footer li{
+	padding-right: 80px;
+}
+.searches{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+}
+.copyright{
+	/*border: 1px solid;*/
+	max-width: 80%;
+	margin: auto;
+	overflow: auto;
+}
+.copyright div{
+	float: left;
+}
+.rights{
+	margin-left: 550px;
+	margin-bottom: 10px;
+}
+hr{
+	/*border: 1px solid;*/
+	padding-top: 40px;
+	max-width: 80%;
+	margin: auto;
+}
+/*81494 70615*/
+/*99873 37435*/
