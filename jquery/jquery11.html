@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("input").click(function(){
+				// alert(1);
+				$.getJSON("http://localhost/gaurav/jquery/record.json", function(response){
+					// console.log(response);
+					$("p:first").html(response[0].name);	
+					$("p:last").html(response[0]["age"]);
+
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="get data">
+	<p></p>
+	<p></p>
+</body>
+</html>

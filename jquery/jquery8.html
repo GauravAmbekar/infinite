@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// alert(1);
+			$("input[type=button]:first").click(function(){
+				// alert(1);
+				wi = $(".img").attr("width");
+				// alert(wi);
+				hi = $(".img").attr("height");
+				$("#para").html(wi + " X " + hi);
+			})
+			$("input[type=button]:last").click(function(){
+				// alert(1);
+				nwi = $(".x1").val();
+				nhi = $(".x2").val();
+				// alert(nwi);
+				$(".img").attr("width", nwi);
+				$(".img").attr("height", nhi);
+			})
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="Enter">
+	<input type="button" value="change">
+	<img src="img1.jpg" class="img" width="150" height="200" >
+	<p id="para"></p>
+	<input type="text" class="x1">
+	<input type="text" class="x2">
+</body>
+</html>
