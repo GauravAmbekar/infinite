@@ -1,0 +1,9 @@
+*{
+	position: static|absolute|fixed|relative|sticky|initial|inherit;
+	bottom: auto|length|initial|inherit;
+	clip: auto|shape|initial|inherit;
+	left: auto|length|initial|inherit;
+	right: auto|length|initial|inherit;
+	top: auto|length|initial|inherit;
+	z-index: auto|number|initial|inherit;
+}

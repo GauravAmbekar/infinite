@@ -1,0 +1,19 @@
+.row{
+	padding: 10px 10px 0;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.glyphicon{
+	padding-left: 0;
+}
+.form-control{
+	padding-top: 10px;
+}
+.form-group{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.navbar {
+  margin-bottom: 10px;
+}

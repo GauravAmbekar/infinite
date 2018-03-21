@@ -1,0 +1,114 @@
+*{
+	margin:0;
+}
+body{
+	background:white;
+	font-family:arial,times;
+}
+.heading{
+	background:black;
+	color:white;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:20px;
+	text-transform:capitalize;
+
+}
+.menu{
+	/*border:1px solid;*/
+	width:1200px;
+	margin:auto;
+}
+.menu ul{
+	padding-left:0;
+	list-style:none;
+	overflow:auto;
+	
+}
+.menu ul li{
+	/*border:1px solid;*/
+	/*display:inline-block;*/
+	float:left;
+}
+.menu ul li a{
+	/*border:1px solid;*/
+	display: block;
+	padding:20px 15px;
+	color:gray;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.menu ul li a:hover{
+	background:lightgray;
+}
+.menu ul li:last-child{
+	float:right;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.text{
+	width:200px;
+	height:35px;
+}
+.travel{
+	/*border:1px solid;*/
+}
+.travel img{
+	width:100%;
+}
+.products{
+	/*background:gray;*/
+}
+.products h2{
+	text-align:center;
+	padding-top:25px;
+	padding-bottom:25px;	
+}
+.products_box{
+	width:1200px;
+	/*border:1px solid;*/
+	margin-left:auto;
+	margin-right:auto;
+	overflow: auto;
+}
+.products_img{
+	/*border:1px solid;*/
+	width:279px;
+	float:left;
+}
+.right_box{
+	float:right;
+}
+.middle_box{
+	margin-left:26px;
+}
+.footerbox{
+	background: black;
+	color:white;
+}
+.container{
+	width:1200px;
+	margin:auto;
+	font-size:10px;
+	padding:8px 0;
+	overflow: auto;
+}
+.services{
+	/*border:1px solid;*/
+	width:16.66%;
+	float:left;
+	font-size:14px;	
+}
+.copyright{
+	background: black;
+	color:white;
+}
+.copyright-content{
+	/*border:1px solid;*/
+	float:left;
+	font-variant: small-caps;
+}
+.privacy,.terms{
+	float:right;
+}

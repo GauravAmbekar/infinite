@@ -1,0 +1,37 @@
+<button onclick="check()">Change</button>
+<button onclick="check1()">Start</button>
+<button onclick="check2()">Stop</button>
+<button onclick="check3()">Enter</button>
+
+<p id="para">Test</p>
+
+<script type="text/javascript">
+	function check(){
+		// alert(1);
+		para=document.querySelector("#para");
+		setTimeout(function(){
+			para.innerHTML="New";
+		},3000);
+	}
+
+	data=1;
+	function check1(){
+		// data=1;
+		para=document.querySelector("#para");
+		intervalData=setInterval(function(){
+			para.innerHTML=data;
+			data++;
+		},1000);
+	}
+	function check2(){
+		clearInterval(intervalData);
+	}
+	
+	function check3(){
+		para=document.querySelector("#para");
+		setInterval(function(){
+			udate = new Date();
+			para.innerHTML = udate.getFullYear()+" "+udate.getHours()+":"+udate.getMinutes()+":"+udate.getSeconds();
+		},1000);		
+	}
+</script>

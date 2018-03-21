@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body onload="get_random_number()" style="margin-top: 50px;">
+	<div class="container">
+
+		<!-- <form> -->
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>Name</label></div>
+				<div class="col-lg-4"><input type="text" id="uname"></div>
+				<div class="col-lg-4 bg-danger" id="error-uname"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>Mobile</label></div>
+				<div class="col-lg-4"><input type="text" id="umobile"></div>
+				<div class="col-lg-4 bg-danger" id="error-umobile"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>dob</label></div>
+				<div class="col-lg-4"><input type="text" id="udob"></div>
+				<div class="col-lg-4 bg-danger" id="error-udob"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>Username</label></div>
+				<div class="col-lg-4"><input type="text" id="username"></div>
+				<div class="col-lg-4 bg-danger" id="error-username"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>Email Id</label></div>
+				<div class="col-lg-4"><input type="text" id="uemail"></div>
+				<div class="col-lg-4 bg-danger" id="error-uemail"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>Password</label></div>
+				<div class="col-lg-4"><input type="text" id="upass"></div>
+				<div class="col-lg-4 bg-danger" id="error-upass"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right"><label>Confirm Password</label></div>
+				<div class="col-lg-4"><input type="text" id="ucpass"></div>
+				<div class="col-lg-4 bg-danger" id="error-ucpass"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right">
+					<label>Captcha</label>
+					<span id="rand_data"></span>
+					<button onclick="get_random_number()">Reload</button>
+				</div>
+				<div class="col-lg-4"><input type="text" id="captcha"></div>
+				<div class="col-lg-4 bg-danger" id="error-captcha"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-right">
+					<button class="btn btn-primary"	onclick="validate_check()">Submit</button>
+				</div>
+				<div class="col-lg-4">
+					<button class="btn btn-primary" type="reset">Reset</button>
+				</div>
+				<div class="col-lg-4 bg-danger" id="errmsg"></div>
+			</div>
+		<!-- </form> -->
+	</div>
+<script src="validation.js"></script>
+<script src="validate_check.js"></script>
+
+</body>
+</html>
