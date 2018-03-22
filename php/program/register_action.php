@@ -47,8 +47,8 @@
 			
 			$url = "http://api.textlocal.in/send/?username=".$username."&hash=".$hash."&message=".$message."&sender=".$sender."&numbers=".$numbers."&test=".$test;
 			
-			$res = file($url);
-			print_r($res);
+			// $res = file($url);
+			// print_r($res);
 			$msg = "ok";
 		}
 	}

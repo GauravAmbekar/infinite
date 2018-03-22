@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	$conn = new mysqli("localhost","root","","gaurav");	
 	// print_r($_POST);
 	if (empty($_POST['userEmail'])) {
@@ -13,6 +14,7 @@
 		// print_r($ans);
 
 		if ($ans['cnt'] > 0) {
+			$_SESSION['pro_email'] = $uemail;
 			$umob = $ans['user_mobile'];
 			// echo($umob);
 			$otp = rand(1000, 9999);

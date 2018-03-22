@@ -7,3 +7,4 @@
 	echo "Welcome ".$_SESSION['pro_name'];
 ?>
 <a href="logout.php">Logout</a>
+<a href="password.php">Change Password</a>

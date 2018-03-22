@@ -36,9 +36,27 @@ $(document).ready(function(){
 
 				$(".forgot_btn2").click(function(){
 					// alert(1);
-					record = $("#forgot_form1").serialize();	
-
+					otp = $("#forgot_form2").serialize();
+					// console.log(otp);
+					$.post("otp_action.php", otp, function(response){
+						$(".msg").html(response);
+					});
 				});
+			} else {
+				$(".msg").html(response);
+			}
+		});
+	});
+
+
+
+	$(".pass_btn").click(function(){
+		$.post("password_action.php", $("#password_form").serialize(), function(response){
+			// console.log(response);
+			// $(".msg").html(response);
+			if (response == "ok") {
+				$(".msg").html("password updated");
+				$("#password_form")[0].reset();
 			} else {
 				$(".msg").html(response);
 			}
