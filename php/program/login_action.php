@@ -1,5 +1,5 @@
 <?php
-	
+	session_start();	
 	$conn = new mysqli("localhost","root","","gaurav");
 	$msg = "";
 	if (empty($_POST['userEmail'])) {
@@ -24,6 +24,10 @@
 			// print_r($ans);
 
 			if($upass = $dbpass){
+				$_SESSION['pro_id'] = $ans['user_id'];
+				$_SESSION['pro_name'] = $ans['user_name'];
+				$_SESSION['pro_mobile'] = $ans['user_mobile'];
+				$_SESSION['pro_email'] = $ans['user_email'];
 				$msg = "Login Successfully";	
 			}else{
 				$msg = "Login Failed";	
