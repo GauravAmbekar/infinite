@@ -1,0 +1,14 @@
+/*POPULAR SEARCHES*/
+#mySearches{
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+#mySearches a{
+	color: gray;
+	font-size: 12px;
+}
+#myAddress{
+	border-bottom: 1px solid lightgray;
+}
+/*END OF POPULAR SEARCHES*/

@@ -1,0 +1,8 @@
+/*CAROUSEL*/
+#myCarousel img, #myCashback img, #myCode img{
+	/*height: 80%;*/
+	width: 100%;
+	/*border: 1px solid;*/
+	margin: auto;
+}
+/*END OF CAROUSEL*/

@@ -1,0 +1,19 @@
+/*ONLY THE BEST*/
+#myOnlythebest{
+	background: linear-gradient(to bottom right, lightblue, white);
+}
+#myOnlythebest .row{
+	margin: 50px auto;
+	border: 1px solid lightgray;
+}
+
+#myOnlythebest p{
+	color: gray;
+}
+#myOnlythebest li{
+	border-bottom: 1px solid lightgray;
+}
+#myOnlythebest a{
+	color: black;
+}
+/*END OF ONLY THE BEST*/
