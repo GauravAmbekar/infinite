@@ -1,7 +1,6 @@
 <?php
 	session_start();
 	$conn = new mysqli("localhost","root","root","gaurav");
-	$msg = "";
 	if (empty($_POST['userEmail'])) {
 		$msg = "Please enter Email";
 	}
@@ -17,8 +16,11 @@
 		if($rec->num_rows > 0){
 			$ans = $rec->fetch_array(MYSQLI_ASSOC);
 			$dbpass = $ans['user_password'];			
-			// print_r($ans);
-			if($upass = $dbpass){
+			// print_r($dbpass);
+			// echo "<br/>";
+			// print_r($upass);
+
+			if($upass == $dbpass){
 				$_SESSION['pro_id'] = $ans['user_id'];
 				$_SESSION['pro_name'] = $ans['user_name'];
 				$_SESSION['pro_mobile'] = $ans['user_mobile'];
@@ -27,6 +29,8 @@
 			}else{
 				$msg = "Login Failed";	
 			}
+		}else{
+			$msg = "User not exists";	
 		}
 	}
 	echo $msg;

@@ -1,7 +1,7 @@
 <?php
 	// print_r($_POST);
 	session_start();
-	$pro_id = $_SESSION['pro_id']; 
+	$pro_email = $_SESSION['pro_email'];
 	$conn = new mysqli("localhost","root","root","gaurav");	
 	if (empty($_POST['userPassword'])) {
 		$msg = "Please enter New Password";
@@ -14,7 +14,8 @@
 	}
 	else{
 		$newPass = sha1($_POST['userPassword']);
-		$q = "update ga_users set user_password = '$newPass' where user_id = '$pro_id'";
+		$q = "update ga_users set user_password = '$newPass' where user_id = '$pro_email'";
+		// echo $q;
 		$res = $conn->query($q)or die($conn->error);
 		if ($res) {
 			$msg = "ok";
@@ -22,4 +23,7 @@
 	}
 	echo $msg;
 	$conn->close();
+	session_unset($_SESSION['pro_email']);
+	session_destroy();
+	session_regenerate_id(true);
 ?>

@@ -67,4 +67,14 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$("#password_btn").click(function(){
+		$.post("actions/change_password_action.php", $("#password_form").serialize(), function(response){
+			if (response == "ok") {
+				$(".msg").html("password updated");
+				$("#password_form")[0].reset();
+			} else {
+				$(".msg").html(response);
+			}
+		});
+	});
 });

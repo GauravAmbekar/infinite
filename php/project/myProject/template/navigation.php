@@ -430,8 +430,9 @@
                   <ul class="dropdown-menu small-dropdown-menu">
                      <div class="well-lg">
                         <div><strong><?php echo$_SESSION['pro_name']; ?></strong></div>
-                        <div><small><?php echo$_SESSION['pro_email']; ?></small></div>
+                        <div class="text-lowercase"><small><?php echo$_SESSION['pro_email']; ?></small></div>
                         <a href="logout.php" type="button" class="btn btn-default">Logout</a>
+                        <a href="password.php" type="button" class="btn btn-default">Change Paswword</a>
                      </div>
                </ul>
                <?php } ?>
