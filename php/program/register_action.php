@@ -47,6 +47,7 @@
 			
 	// 		$url = "http://api.textlocal.in/send/?username=".$username."&hash=".$hash."&message=".$message."&sender=".$sender."&numbers=".$numbers."&test=".$test;
 			
+<<<<<<< HEAD
 	// 		$res = file($url);
 	// 		print_r($res);
 	// 		$msg = "ok";
@@ -54,4 +55,13 @@
 	// }
 	// echo $msg;
 	// $conn->close();
+=======
+			// $res = file($url);
+			// print_r($res);
+			$msg = "ok";
+		}
+	}
+	echo $msg;
+	$conn->close();
+>>>>>>> 809541aa6caf05824dc130aab1448408425a0d74
 ?>
