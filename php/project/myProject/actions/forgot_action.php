@@ -17,7 +17,7 @@
 			$_SESSION['pro_email'] = $uemail;
 			$umob = $ans['user_mobile'];
 			// echo($umob);
-			$otp = rand(1000, 9999);
+			$otp = mt_rand(1000, 9999);
 
 			// send sms
 

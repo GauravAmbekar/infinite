@@ -28,7 +28,7 @@
                      <li class="col-sm-3">
                         <ul>
                            <li class="dropdown-header">Topwear</li>
-                           <li><a href="#">t-shirts</a></li>
+                           <li><a href="men-tshirts.php">t-shirts</a></li>
                            <li><a href="#">casual shirts</a></li>
                            <li><a href="#">formal shirts</a></li>
                            <li><a href="#">sweaters & sweatshirts</a></li>

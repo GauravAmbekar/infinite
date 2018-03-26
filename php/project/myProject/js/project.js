@@ -10,7 +10,9 @@ $(document).ready(function(){
 			}
 		});
 	});
+
 	$('#forgot_form2, #forgot_form3').hide();
+
 	$("#login_btn").click(function(){
 		// alert(1);
 		// console.log($("#login_form").serialize());
@@ -24,49 +26,47 @@ $(document).ready(function(){
 			}
 		});
 	});
+
 	$("#forgot_btn1").click(function(){
 		$.post("actions/forgot_action.php", $("#forgot_form1").serialize(), function(response){
 			if(response == "ok"){
-				// console.log(response);		
-				// $(".msg1").text("");
+				$("#forgot_form1")[0].reset();
 				alert("OTP has been send to your register mobile no.");
-				$("#forgot_form2").slideDown();
-				$("#forgot_form1").slideUp();
+				$("#forgot_form2, #forgot_form1").slideToggle();
 			}
 			else{
-				// console.log(response);	
-				// $(".msg1").html(response);	
 				alert(response);
+				$("#forgot_form1")[0].reset();
 			}
 		});
 	});
+
 	$("#forgot_btn2").click(function(){
 		$.post("actions/otp_action.php", $("#forgot_form2").serialize(), function(response){
 			if(response == "ok"){
-				$("#forgot_form3").slideDown();
-				$("#forgot_form2").slideUp();
+				$("#forgot_form2")[0].reset();
+				$("#forgot_form3, #forgot_form2").slideToggle();
 			}
 			else{
-				// console.log(response);	
-				// $(".msg1").html(response);	
 				alert(response);
 			}
 		});
 	});
+
 	$("#forgot_btn3").click(function(){
 		$.post("actions/change_action.php", $("#forgot_form3").serialize(), function(response){
 			if(response == "ok"){
+				$("#forgot_form3")[0].reset();
 				alert("Password has been changed");
 				window.location.href = "login.php";
 
 			}
 			else{
-				// console.log(response);	
-				// $(".msg1").html(response);	
 				alert(response);
 			}
 		});
 	});
+
 	$("#password_btn").click(function(){
 		$.post("actions/change_password_action.php", $("#password_form").serialize(), function(response){
 			if (response == "ok") {
@@ -77,4 +77,5 @@ $(document).ready(function(){
 			}
 		});
 	});
+
 });

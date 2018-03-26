@@ -13,12 +13,13 @@
 		$msg = "Password mismatch";
 	}
 	else{
-		$newPass = sha1($_POST['userPassword']);
-		$q = "update ga_users set user_password = '$newPass' where user_id = '$pro_email'";
-		// echo $q;
-		$res = $conn->query($q)or die($conn->error);
-		if ($res) {
-			$msg = "ok";
+			$newPass = sha1($_POST['userPassword']);
+			$q = "update ga_users set user_password = '$newPass', user_otp = 0 where user_email = '$pro_email'";
+			// echo $q;
+			$res = $conn->query($q)or die($conn->error);
+			if ($res) {
+				$msg = "ok";
+			}
 		}
 	}
 	echo $msg;
