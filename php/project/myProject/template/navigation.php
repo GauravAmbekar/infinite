@@ -1,3 +1,9 @@
+<?php
+
+// include("db_connect.php");
+// include("db_function.php");
+?>
+
 <!-- NAVIGATION -->
 <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
    <div class="container top-header">
@@ -7,7 +13,7 @@
          <li><a href="#">contact us</a></li>
       </ul>
    </div>
-   <div class="container">
+   <div class="container navigation">
       <div class="navbar-header">
          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -399,13 +405,13 @@
          </ul>
 
          <ul class="nav navbar-nav navbar-right">
-            <li>
+            <li class="search-form">
                <form class="navbar-form">
                   <div class="form-group"  style="border: 1px solid lightgray;">
                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="search" style="border:none;">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
                         <div class="input-group-btn">
-                           <button class="btn btn-default" type="submit" style="border:none;">
+                           <button class="btn btn-default" type="submit">
                               <i class="glyphicon glyphicon-search"></i>
                            </button>
                         </div>
@@ -424,21 +430,50 @@
                         <p><small>Access account and manage orders</small></p>
                         <a href="register.php" type="button" class="btn btn-default">Sign Up</a>
                         <a href="login.php" type="button" class="btn btn-default pull-right">Login</a>
+
                      </div>
                </ul>   
                <?php }else{ ?>
                   <ul class="dropdown-menu small-dropdown-menu">
-                     <div class="well-lg">
+                     <div class="well-sm">
                         <div><strong><?php echo$_SESSION['pro_name']; ?></strong></div>
                         <div class="text-lowercase"><small><?php echo$_SESSION['pro_email']; ?></small></div>
-                        <a href="logout.php" type="button" class="btn btn-default">Logout</a>
-                        <a href="password.php" type="button" class="btn btn-default">Change Paswword</a>
+                        <a href="logout.php" type="button" class="btn btn-default btn-sm">Logout</a>
+                        <a href="password.php" type="button" class="btn btn-default btn-sm">Change Paswword</a>
                      </div>
+
+                        <?php if($_SESSION["pro_status"] == 1): ?>
+                           <div class="well-sm">
+                              <ul class="list-unstyled">
+                                 <li>
+                                    <a href="category.php">Add Category</a>
+                                 </li>
+                                 <li>
+                                    <a href="brand.php">Add Brand</a>
+                                 </li>
+                                 <li>
+                                    <a href="product.php">Add Product</a>
+                                 </li>
+                              </ul>                              
+                           </div>
+                        <?php endif; ?>
                </ul>
                <?php } ?>
             </li>
             <li>
-               <a href="#"><i class="glyphicon glyphicon-briefcase"></i></a>
+               <a href="cart.php">
+                  <i class="glyphicon glyphicon-briefcase"></i>
+                  <?php
+                     if (isset($_COOKIE["cartProduct"])) {
+                        $result = explode(",", $_COOKIE["cartProduct"]);
+                        $ans = count(array_count_values($result));
+                     }
+                     else{
+                        $ans = 0;
+                     }
+                  ?>
+                  Cart(<span class="cart_count"><?php echo $ans; ?></span>)
+               </a>
             </li>
          </ul>
       </div><!-- /.nav-collapse -->

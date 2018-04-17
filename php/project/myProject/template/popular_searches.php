@@ -1,6 +1,6 @@
 <!-- POPULAR SEARCHES -->
 <div id="mySearches" class="container">
-	<div class="text-uppercase">
+	<div class="text-uppercase col-xs-12">
 		<strong>popular searches</strong>
 		<p></p>
 		<ul class="list-unstyled list-inline text-capitalize">
@@ -56,10 +56,10 @@
 		</ul>
 	</div>
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-6 col-xs-6">
 			<small>In case of any concern,</small><a href="#"><strong>Contact Us</strong></a>
 		</div>
-		<div class="col-lg-6">
+		<div class="col-lg-6 col-xs-6">
 			<small class="pull-right">&copy;2018 www.myntra.com. All right reserved</small>
 		</div>
 	</div>
@@ -68,7 +68,7 @@
 <!-- REGISTERED ADDRESS -->
 	<div id="myAddress" class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12">
 				<h5 class="text-capitalize"><strong>registered office address</strong></h5>
 				<p class="small gray-text text-justify">
 					3rd Floor, A Block,AKR Tech Park,
@@ -80,7 +80,7 @@
 					Kudlu Gate, Bangalore – 560068
 				</p>
 			</div>
-			<div class="col-md-4 col-md-offset-4">
+			<div class="col-md-4 col-md-offset-4 col-xs-12">
 				<div class="pull-right">
 					<div class="well-lg">
 						<span class="small gray-text">CIN: U72300KA2007PTC041799 </span>
@@ -92,8 +92,8 @@
 	</div>
 <!-- END OF REGISTERED ADDRESS -->
 <!-- TEXT CONTENT -->
-<div class="container">
-	<div class="row">
+<div class="container" id="text-content">
+	<div class="row ">
 		<h6 class="text-uppercase"><strong>online shopping made easy at myntra</strong></h6>
 		<p class="small gray-text text-justify"> 
 			We have all planned our trips to the clothing store in advance, vividly dreaming about what we would buy once there. Some of us even have sales assistants for friends and have often asked them for a favour or two during peak shopping season (read: festivals and sales). But what we can all admit to is that we have always wished it was easier than to go down to the store in dense traffic, navigating through throngs of fashionistas, all vying for the same trendy clothing items, waiting in line to try on our top picks in the trial rooms, etc.

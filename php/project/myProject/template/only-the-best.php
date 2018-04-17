@@ -4,10 +4,10 @@
 		<h3 class="text-uppercase"><strong>only the best</strong></h3>
 		<p class="text-capitalize small">popular categories that people are shopping for right now</p>
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-md-3">
 				<img src="images/men-img.jpg" class="img-responsive">
 			</div>
-			<div class="col-lg-3">
+			<div class="col-md-3">
 				<h4 class="text-capitalize"><strong>men's</strong></h4>
 				<p class="text-uppercase small">popular</p>
 				<ul>
@@ -34,10 +34,10 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-md-3">
 				<img src="images/women-img.jpg" class="img-responsive">
 			</div>
-			<div class="col-lg-3">
+			<div class="col-md-3">
 				<h4 class="text-capitalize"><strong>women's</strong></h4>
 				<p class="text-uppercase small">popular</p>
 				<ul>

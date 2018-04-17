@@ -3,7 +3,7 @@
 	<h3 class="text-uppercase"><strong>handpicked</strong></h3>
 	<p class="text-capitalize small">the best of the global brands, at your doorstep!</p>
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-4 col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<a href="#" class="zoom">
@@ -13,7 +13,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<a href="#" class="zoom">
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<a href="#" class="zoom">
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-4">
+		<div class="col-lg-4 col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<a href="#" class="zoom">
@@ -45,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<a href="#" class="zoom">
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<a href="#" class="zoom">
